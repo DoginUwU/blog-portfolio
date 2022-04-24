@@ -35,11 +35,22 @@ const Content = styled.div`
     flex-wrap: wrap;
     gap: 16px;
 
-    img {
+    a {
         width: 100%;
         height: 80px;
         border-radius: 8px;
+        overflow: hidden;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 `;
 
