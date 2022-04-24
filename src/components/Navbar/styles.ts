@@ -6,7 +6,7 @@ interface LinkNavigationProps {
     active?: boolean;
 }
 
-const NavbarContainer = styled.div`
+const NavbarContainer = styled.header`
     position: fixed;
     top: 0;
     left: 0;

@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useTheme } from 'styled-components';
 import Button from '../../../components/Button';
 import Tag from '../../../components/Tag';
@@ -14,8 +15,13 @@ const Post: React.FC = () => {
             <Header>
                 <h1>Novidades do React 18</h1>
                 <div>
-                    <Tag text="React" />
-                    <Tag color={theme.colors.background} icon={<Icon icon="fa-solid:clock" />} text="24/04/2022" />
+                    <Tag to="/tag/react" text="React" />
+                    <Tag
+                        to="/"
+                        color={theme.colors.background}
+                        icon={<Icon icon="fa-solid:clock" />}
+                        text="24/04/2022"
+                    />
                 </div>
             </Header>
             <Content>
@@ -28,7 +34,9 @@ const Post: React.FC = () => {
                     alt=""
                 />
             </Content>
-            <Button>Continuar leitura</Button>
+            <Link to="/post/novidades-react-18">
+                <Button>Continuar leitura</Button>
+            </Link>
         </Container>
     );
 };

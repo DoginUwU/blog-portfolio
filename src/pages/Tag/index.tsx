@@ -3,10 +3,10 @@ import GlobalLayout from '../../layouts/Global';
 
 import Posts from '../../layouts/Global/Posts';
 
-const Home: React.FC = () => (
+const Tag: React.FC = () => (
     <GlobalLayout>
         <Posts />
     </GlobalLayout>
 );
 
-export default Home;
+export default Tag;

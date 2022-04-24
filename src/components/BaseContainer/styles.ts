@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-const Container = styled(motion.div)`
+const Container = styled(motion.main)`
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;

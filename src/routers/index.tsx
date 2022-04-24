@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar';
 import ScrollToTop from '../components/ScrollToTop';
 
 import Home from '../pages/Home';
+import Post from '../pages/Post';
+import Tag from '../pages/Tag';
 
 const Router: React.FC = () => (
     <BrowserRouter>
@@ -13,6 +15,8 @@ const Router: React.FC = () => (
         <Routes>
             <Route path="/">
                 <Route index element={<Home />} />
+                <Route path="tag/:name" element={<Tag />} />
+                <Route path="post/:slug" element={<Post />} />
             </Route>
         </Routes>
     </BrowserRouter>

@@ -5,11 +5,11 @@ const navigationItems = [
     },
     {
         name: 'Amigos',
-        link: '/',
+        link: '/friends',
     },
     {
         name: 'Sobre',
-        link: '/',
+        link: '/about',
     },
 ];
 

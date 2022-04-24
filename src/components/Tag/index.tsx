@@ -1,8 +1,9 @@
 import React, { ReactElement } from 'react';
+import { LinkProps } from 'react-router-dom';
 
 import { Container } from './styles';
 
-interface TagProps {
+interface TagProps extends LinkProps {
     icon?: ReactElement;
     text: string;
     color?: string;

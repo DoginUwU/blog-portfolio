@@ -2,10 +2,14 @@ import styled from 'styled-components';
 
 const Container = styled.article`
     width: 100%;
+    background-color: ${({ theme }) => theme.colors.white};
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 24px;
 
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
 
     button {
         width: fit-content;
@@ -15,6 +19,10 @@ const Container = styled.article`
 
 const Header = styled.header`
     width: 100%;
+
+    h1 {
+        font-size: 1.5rem;
+    }
 
     div {
         display: flex;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.main`
+const Container = styled.div`
     width: 100%;
     background-color: ${({ theme }) => theme.colors.white};
     border-radius: 8px;

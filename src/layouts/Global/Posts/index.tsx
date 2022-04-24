@@ -6,6 +6,8 @@ import { Container } from './styles';
 const Posts: React.FC = () => (
     <Container>
         <Post />
+        <Post />
+        <Post />
     </Container>
 );
 
