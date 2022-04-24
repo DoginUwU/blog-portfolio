@@ -9,6 +9,7 @@ const Container = styled.article`
 
     display: flex;
     flex-direction: column;
+    gap: 16px;
 
     button {
         width: fit-content;
@@ -29,8 +30,12 @@ const Header = styled.header`
 `;
 
 const Content = styled.main`
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
     section {
-        padding-top: 70px;
+        padding-top: 15px;
         color: ${({ theme }) => theme.colors.black};
         display: flex;
         flex-direction: column;
