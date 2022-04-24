@@ -56,7 +56,7 @@ const GlobalStyles = createGlobalStyle`
         height: 6px;
     }
     ::-webkit-scrollbar-thumb {
-        background: rgba(255, 255, 255, 0.2);
+        background: ${({ theme }) => theme.colors.semantic.lightBlue};
         border-radius: 10px;
     }
     ::-webkit-scrollbar-track {
