@@ -26,8 +26,8 @@ const Container = styled.div`
 const Content = styled.div`
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 4px;
 `;

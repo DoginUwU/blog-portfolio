@@ -12,7 +12,7 @@ const Container = styled(BaseContainer)`
 `;
 
 const Right = styled.section`
-    max-width: 240px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     gap: 16px;

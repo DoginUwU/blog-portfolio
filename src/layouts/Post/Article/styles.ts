@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const Container = styled.article`
     width: 100%;
     background-color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.black};
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 24px;
@@ -68,6 +69,7 @@ const Content = styled.main`
 
     pre {
         border-radius: 8px;
+        overflow: hidden;
     }
 
     code span {
