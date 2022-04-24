@@ -58,10 +58,6 @@ const Content = styled.main`
         }
     }
 
-    p {
-        text-indent: 8px;
-    }
-
     img {
         width: 100%;
         border-radius: 8px;
