@@ -15,7 +15,7 @@ const CodeSyntax: React.FC<any> = ({ node, inline, className, children, ...props
             {...props}
         />
     ) : (
-        <code className={className} {...props}>
+        <code className={`${className} withoutSyntax`} {...props}>
             {children}
         </code>
     );

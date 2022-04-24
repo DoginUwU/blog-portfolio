@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import { Link } from 'react-router-dom';
 import { useTheme } from 'styled-components';
 import { Post as IPost } from '../../../@types/post';
@@ -33,7 +34,7 @@ const Post: React.FC<PostProps> = ({ data }) => {
                 </div>
             </Header>
             <Content>
-                {data.short_description}
+                <ReactMarkdown>{data.short_description}</ReactMarkdown>
                 <img src={data.image} alt={data.title} />
             </Content>
             <Link to={`/post/${data.slug}`}>

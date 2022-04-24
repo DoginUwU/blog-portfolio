@@ -72,20 +72,9 @@ const Content = styled.main`
         color: rgb(166, 162, 140);
     }
 
-    a {
-        text-decoration: none;
+    .withoutSyntax {
         color: ${({ theme }) => theme.colors.semantic.lightBlue};
-        transition: opacity 0.2s ease-in-out;
-
-        &::after {
-            content: url('https://api.iconify.design/bx/link-external.svg?color=%23428aff&height=12');
-            display: inline-block;
-            margin-left: -5px;
-        }
-
-        &:hover {
-            opacity: 0.8;
-        }
+        font-weight: bold;
     }
 `;
 

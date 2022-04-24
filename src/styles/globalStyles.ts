@@ -40,6 +40,17 @@ const GlobalStyles = createGlobalStyle`
         color: ${({ theme }) => theme.colors.text.primary};
     }
 
+    
+    a {
+        text-decoration: none;
+        color: ${({ theme }) => theme.colors.semantic.lightBlue};
+        transition: opacity 0.2s ease-in-out;
+        
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
     ::-webkit-scrollbar {
         width: 6px;
         height: 6px;

@@ -7,7 +7,7 @@ interface BookmarkProps {
 
 const StickyContainer = styled(Sticky)`
     .sticky {
-        margin-top: -65px;
+        /* margin-top: -65px; */
     }
 `;
 
