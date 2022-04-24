@@ -1,10 +1,11 @@
 import React from 'react';
+import Post from '../Post';
 
 import { Container } from './styles';
 
 const Posts: React.FC = () => (
     <Container>
-        <h1>Ainda em construção</h1>
+        <Post />
     </Container>
 );
 

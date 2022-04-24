@@ -11,7 +11,7 @@ const Container = styled.main`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 24px;
 
     .title {
         width: 100%;
@@ -21,15 +21,26 @@ const Container = styled.main`
     p {
         font-weight: 100;
     }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+        display: none;
+    }
 `;
 
 const Content = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 16px;
+
+    img {
+        width: 100%;
+        height: 80px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
 `;
 
 export { Container, Content };

@@ -23,9 +23,9 @@ const theme: DefaultTheme = {
     breakpoints: {
         xs: '0',
         sm: '576px',
-        md: '768px',
-        lg: '992px',
-        xl: '1200px',
+        md: '992px',
+        lg: '1200px',
+        xl: '1400px',
     },
 };
 

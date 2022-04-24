@@ -8,6 +8,18 @@ const Container = styled(BaseContainer)`
     align-items: flex-start;
     justify-content: space-between;
     gap: 16px;
+    padding-bottom: 100px;
 `;
 
-export { Container };
+const Right = styled.div`
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+        display: none;
+    }
+`;
+
+export { Container, Right };

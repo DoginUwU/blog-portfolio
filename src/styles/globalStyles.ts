@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
 
     html, body, #root {
         height: 100%;
-        padding-top: 30px;
+        padding: 30px 0;
     }
 
     @media (max-width: 1000px) {

@@ -13,10 +13,6 @@ const Container = styled.main`
     align-items: center;
     justify-content: center;
     gap: 10px;
-
-    p {
-        font-weight: 100;
-    }
 `;
 
 export { Container };

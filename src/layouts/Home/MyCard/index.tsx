@@ -8,7 +8,9 @@ const MyCard: React.FC = () => (
     <Container>
         <img src="/assets/my_picture.jpg" alt="" />
         <h2>Dogs</h2>
-        <AnimatedTexts texts={['Amante de jogos', 'Desenvolvedor Full-Stack', 'Buscando emprego']} />
+        <AnimatedTexts
+            texts={['Amante de jogos', 'Desenvolvedor Full-Stack', 'Buscando emprego', 'Amante de animes']}
+        />
         <Contacts>
             <a href="https://github.com/DoginUwU" target="_blank" rel="noreferrer">
                 <Icon icon="akar-icons:github-fill" />
