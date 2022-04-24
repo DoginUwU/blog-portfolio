@@ -9,7 +9,6 @@ const Container = styled.article`
 
     display: flex;
     flex-direction: column;
-    gap: 16px;
 
     button {
         width: fit-content;
@@ -29,12 +28,14 @@ const Header = styled.header`
     }
 `;
 
-const Content = styled.div`
-    margin-top: 4px;
-    color: ${({ theme }) => theme.colors.black};
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+const Content = styled.main`
+    section {
+        padding-top: 70px;
+        color: ${({ theme }) => theme.colors.black};
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
 
     h1 {
         width: 100%;

@@ -8,15 +8,17 @@ import { Container, Right } from './styles';
 
 interface GlobalLayoutProps {
     children: React.ReactNode;
+    rightChildren?: React.ReactNode;
 }
 
-const GlobalLayout: React.FC<GlobalLayoutProps> = ({ children }) => (
+const GlobalLayout: React.FC<GlobalLayoutProps> = ({ children, rightChildren }) => (
     <Container>
         <MyCard />
         {children}
         <Right>
             <Tags />
             <Animes />
+            {rightChildren}
         </Right>
     </Container>
 );
