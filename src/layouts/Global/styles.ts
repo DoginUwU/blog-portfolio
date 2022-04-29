@@ -2,10 +2,11 @@ import styled from 'styled-components';
 import BaseContainer from '../../components/BaseContainer';
 
 const Container = styled(BaseContainer)`
+    position: relative;
     max-width: 1500px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: space-between;
     gap: 16px;
     padding-bottom: 100px;

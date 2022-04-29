@@ -1,15 +1,8 @@
-import Sticky from 'react-stickynode';
 import styled from 'styled-components';
 
 interface BookmarkProps {
     active?: boolean;
 }
-
-const StickyContainer = styled(Sticky)`
-    .sticky {
-        /* margin-top: -65px; */
-    }
-`;
 
 const Container = styled.div`
     position: relative;
@@ -57,4 +50,4 @@ const Bookmark = styled.h3<BookmarkProps>`
     cursor: pointer;
 `;
 
-export { Container, Content, Bookmark, StickyContainer };
+export { Container, Content, Bookmark };

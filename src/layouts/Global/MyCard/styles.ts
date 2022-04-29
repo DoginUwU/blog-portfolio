@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const Container = styled.section`
     max-width: 260px;
     width: 100%;
+    height: fit-content;
     background-color: ${({ theme }) => theme.colors.white};
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);

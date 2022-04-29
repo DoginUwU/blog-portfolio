@@ -1,13 +1,14 @@
 import React from 'react';
 import { useScrollSections } from 'react-scroll-section';
+import ReactStickyBox from 'react-sticky-box';
 
-import { StickyContainer, Bookmark, Container, Content } from './styles';
+import { Bookmark, Container, Content } from './styles';
 
 const Bookmarks: React.FC = () => {
     const sections = useScrollSections();
 
     return (
-        <StickyContainer top="#bookmarks" innerActiveClass="sticky">
+        <ReactStickyBox offsetTop={75}>
             <Container id="bookmarks">
                 <p className="title">Marcadores</p>
                 <Content>
@@ -18,7 +19,7 @@ const Bookmarks: React.FC = () => {
                     ))}
                 </Content>
             </Container>
-        </StickyContainer>
+        </ReactStickyBox>
     );
 };
 
