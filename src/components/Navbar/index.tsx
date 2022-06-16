@@ -25,11 +25,7 @@ const Navbar: React.FC = () => {
                         </LinkNavigation>
                     ))}
                 </Content>
-                <a href="https://gotardo.vercel.app" rel="noreferrer">
-                    <Button color={theme.colors.white} textColor={theme.colors.black}>
-                        Site principal
-                    </Button>
-                </a>
+                <div />
             </Container>
         </NavbarContainer>
     );
