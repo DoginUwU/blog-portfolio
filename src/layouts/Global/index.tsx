@@ -17,7 +17,7 @@ const GlobalLayout: React.FC<GlobalLayoutProps> = ({ children, rightChildren }) 
         {children}
         <Right>
             <Tags />
-            <Animes />
+            {/* <Animes /> */}
             {rightChildren}
         </Right>
     </Container>

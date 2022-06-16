@@ -15,9 +15,9 @@ const Navbar: React.FC = () => {
     return (
         <NavbarContainer>
             <Container>
-                <Link to="/">
+                <a href="https://gotardo.vercel.app" rel="noreferrer">
                     <img src="/favicon.svg" alt="Website logo" width="42px" height="42px" />
-                </Link>
+                </a>
                 <Content>
                     {navigationItems.map((item) => (
                         <LinkNavigation to={item.link} active={checkActive(item.link)} key={item.name}>
